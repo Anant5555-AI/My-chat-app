@@ -1,6 +1,9 @@
 import { MongoClient } from "mongodb";
 
-const uri = process.env.MONGODB_URI || "mongodb+srv://anantanand900:anantanand900@cluster0.lx3wgs5.mongodb.net/chatapp?retryWrites=true&w=majority&appName=Cluster0";
+const uri = process.env.MONGODB_URI;
+if (!uri) {
+  throw new Error("Please add your Mongo URI to .env");
+}
 
 let client;
 let clientPromise;
