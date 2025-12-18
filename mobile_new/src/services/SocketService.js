@@ -1,6 +1,7 @@
 import io from 'socket.io-client';
 
-const SOCKET_URL = 'http://192.168.0.185:3000'; // TODO: configure to match your backend
+const SOCKET_URL = 'https://my-chat-app-1kbx.onrender.com'; // Live Render URL
+const SOCKET_PATH = '/socket.io'; // Standard Socket.io path
 
 class SocketService {
     constructor() {
@@ -13,6 +14,7 @@ class SocketService {
         }
 
         this.socket = io(SOCKET_URL, {
+            path: SOCKET_PATH,
             auth: { token },
             transports: ['websocket'],
         });

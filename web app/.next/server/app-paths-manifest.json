@@ -1,8 +1,6 @@
 {
+  "/api/auth/refresh/route": "app/api/auth/refresh/route.js",
   "/page": "app/page.js",
-  "/chat/page": "app/chat/page.js",
   "/mobile-login/page": "app/mobile-login/page.js",
-  "/api/messages/route": "app/api/messages/route.js",
-  "/api/mobile/qr-login/route": "app/api/mobile/qr-login/route.js",
-  "/api/messages/delete/route": "app/api/messages/delete/route.js"
+  "/chat/page": "app/chat/page.js"
 }

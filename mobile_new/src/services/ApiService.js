@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://192.168.0.185:3000'; // Updated to local IP
+const API_BASE_URL = 'https://my-chat-app-1kbx.onrender.com'; // Live Render URL
 
 async function request(path, { method = 'GET', body, token } = {}) {
     const headers = {
